@@ -33,27 +33,27 @@ const AddUser = (props) => {
 
   return (
     <>
-    <ErrorModal title="An error ocurred!" message="Something went wrong" />
-    <Card className={classes.input}>
-      <form onSubmit={addUserHandler}>
-        <label htmlFor="username">Username</label>
-        <input
-          id="username"
-          type="text"
-          value={enteredUserName}
-          onChange={userNameChangeHandler}
-        />
-        <label htmlFor="age">Age (Years)</label>
-        <input
-          id="age"
-          type="number"
-          value={enteredAge}
-          min="0"
-          onChange={ageNameChangeHandler}
-        />
-        <Button type="submit">Add user</Button>
-      </form>
-    </Card>
+      <ErrorModal title="An error ocurred!" message="Something went wrong" />
+      <Card className={classes.input}>
+        <form onSubmit={addUserHandler}>
+          <label htmlFor="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            value={enteredUserName}
+            onChange={userNameChangeHandler}
+          />
+          <label htmlFor="age">Age (Years)</label>
+          <input
+            id="age"
+            type="number"
+            value={enteredAge}
+            min="0"
+            onChange={ageNameChangeHandler}
+          />
+          <Button type="submit">Add user</Button>
+        </form>
+      </Card>
     </>
   );
 };
